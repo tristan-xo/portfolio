@@ -394,11 +394,11 @@ footer {
         }
 
 /* Responsive Styling for Projects Section */
-@media (max-width: 768px) {
+@media (max-width: 1900px) {
     .project-details {
         max-width: 100%;
         padding: 20px;
-        font-size: 16px;
+        font-size: 32px;
         margin-top: -50px;
         margin-bottom: -50px;
     }
@@ -430,7 +430,47 @@ footer {
     }
 
     #projects p {
-        font-size: 18px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        max-width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        margin-top: -50px;
+        margin-bottom: -75px;
+    }
+
+    .video-container1{
+        max-width: 100%;
+        padding: 0px;
+        float: none;
+        align-items: center;
+    }
+
+    .video-container2 {
+        max-width: 100%;
+        margin-top: 150px;
+        padding: 0px;
+        float: none;
+        align-items: center;
+    }
+
+    .img-container1, .img-container2, .img-container3,
+    .img-container4, .img-container5, .img-container6 {
+        max-width: 100%;
+        padding: 10px;
+        float: none;
+    }
+
+    #projects h1 {
+        font-size: 1.5rem;
+    }
+
+    #projects p {
+        font-size: 1.2rem;
     }
 }
 
