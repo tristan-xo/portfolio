@@ -267,6 +267,7 @@ footer {
         #resume p {
             font-size: 18px;
             line-height: 1.6;
+            margin-top: 0px;
             padding: 0px ;
             color: #333;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -288,8 +289,9 @@ footer {
 
         .resume-links img {
             object-fit: contain;
-            width: 50px; 
+            width: 40px; 
             height: 50px; 
+            margin-top: -5px;
             vertical-align: middle;
             gap: 50px;
         }
@@ -303,6 +305,96 @@ footer {
     }
 }
 
+/* Skills Section */
+#skills {
+    max-width: 900px;
+    height: 100px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    left: 500px;
+}
+
+        #skills h2 {
+            padding: 10px;
+            margin-top: -2.5px;
+            font-size: 18px;
+            margin-bottom: 0px;
+            font-family: "Red Hat Display";
+        }
+
+        .skill-set {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-set img {
+            object-fit: contain;
+            width: 60px; 
+            height: 60px;
+            margin-top: -10px;
+            vertical-align: middle;
+            gap: 50px;
+        }
+        
+#location {
+    max-width: 300px;
+    height: 100px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    left: 1455px;
+}
+        
+        #location h2 {
+            padding: 10px;
+            margin-top: -2.5px;
+            font-size: 18px;
+            margin-bottom: 0px;
+            font-family: "Red Hat Display";
+        }
+        
+        #location p{
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 0px;
+            padding: 0px ;
+            color: #333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline; 
+            vertical-align: middle;
+        }
+        .location-set {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .location-set img {
+            object-fit: contain;
+            width: 45px; 
+            height: 45px;
+            position: relative;
+            left: 20px;
+            margin-top: -10px;
+            vertical-align: middle;
+            gap: 50px;
+        }
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #skills {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
 /* Projects Section */
 #projects {
     display: flex;
