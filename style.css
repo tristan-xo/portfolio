@@ -64,7 +64,13 @@ footer {
     width: 100%;
     bottom: 0px;
     line-height: .5;
+}
 
+@media (max-width: 1900px) {
+    footer {
+        position: relative;
+        top: 200px; /* Adjust the value as needed to place the footer below the location section */
+    }
 }
 
 #home {
@@ -259,6 +265,7 @@ footer {
 
         #resume h2 {
             padding: 10px;
+            margin-top: -2.5px;
             font-size: 18px;
             margin-bottom: 0px;
             font-family: "Red Hat Display";
@@ -297,11 +304,13 @@ footer {
         }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 1900px) {
     #resume {
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 150px; /* Adjust height for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px; /* Adjust height for smaller screens */
+        position: relative;
+        left: 0;
     }
 }
 
@@ -340,7 +349,38 @@ footer {
             vertical-align: middle;
             gap: 50px;
         }
+
+/* Responsive Styling */
+@media (max-width: 1900px) {
+    #skills {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 250px; /* Adjust height for smaller screens */
+        position: relative;
+        left: 0px;
+        top: 120px;
+    }
+
+    #skills h2 {
+        font-size: 18px;
+    }
+
+    .skill-set {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 10px; /* Add some gap between images */
+    }
+
+    .skill-set img {
+        width: calc(60% - 20px); /* Two images in a row with 10px gap */
+        height: 40px;
+        flex: 1 1 calc(50% - 10px); /* Two images in a row */
+    }
+}
         
+
 #location {
     max-width: 300px;
     height: 100px;
@@ -387,14 +427,19 @@ footer {
             vertical-align: middle;
             gap: 50px;
         }
+
 /* Responsive Styling */
-@media (max-width: 768px) {
-    #skills {
-        margin-left: 20px;
-        margin-right: 20px;
-        height: auto; /* Adjust height for smaller screens */
+@media (max-width: 1900px) {
+    #location {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px; /* Adjust height for smaller screens */
+        position: relative;
+        left: 0px;
+        top: 240px;
     }
 }
+
 /* Projects Section */
 #projects {
     display: flex;
